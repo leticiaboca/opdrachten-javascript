@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Opdracht 22</title>
+</head>
+<body>
+<h1>Schildersbedrijf</h1>
+<ul>
+    <li>Het soort oppervlak inleest(muur,plafond en vloer)</li>
+    <li>De lengte inleest/afdrukken</li>
+    <li>De breedte inleest/afdrukken</li>
+    <li>De oppervlakte berekent/afdrukken</li>
+    <li>muur = 25 euro per m2</li>
+    <li>Plafond = 40 euro per m2 </li>
+    <li>Vloer = 30 euro per m2</li>
+</ul>
+<label>Muur
+    <input type="text" id="muur1" name="lengte" value="lengte">
+    <input type="text" id="muur2" name="breedte" value="breedte">
+</label>
+<br>
+<br>
+<label>
+    <input type="text" id="plafond1" name="lengte" value="lengte">
+    <input type="text" id="plafond2" name="breedte" value="breedte">
+</label>
+<br>
+<button onclick="bereken()">bereken</button>
+<p id="muur3">berekening muur</p>
+<p id="muur4">muur prijs</p>
+<br>
+<br>
+<p id="totaalprijs"></p>
+
+<script>
+    function bereken() {
+        var muurLengte = document.getElementById("muur1").value;
+        var muurBreedte = document.getElementById("muur2").value;
+
+        var muurBerekening = muurLengte * muurBreedte;
+        var muurPrijs = muurBerekening * 25;
+
+        document.getElementById("muur3").innerHTML = "muurBerekening: "+ muurBerekening;
+        document.getElementById("muur3").innerHTML = "muur prijs"+ muurPrijs;
+
+        var plafondLengte = document.getElementById("plafond1").value;
+        var plafondBreedte = document.getElementById("plafond2").value;
+
+        var plafondBerekening = plafondBreedte * plafondLengte;
+        var plafondpPrijs = plafondBerekening * 40;
+
+        document.getElementById("plafond3").innerHTML = "plafondBerekening" + plafondBerekening;
+        document.getElementById("plafond4").innerHTML = "plafond prijs" + plafondpPrijs;
+
+
+
+        var totaalPrijs = plafondpPrijs + muurPrijs;
+        document.getElementById("totaalprijs").innerHTML = "Totaal prijs is" + totaalPrijs;
+    }
+</script>
+</body>
+</html>

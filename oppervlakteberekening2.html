@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Opdracht 11</title>
+</head>
+<body>
+<script>
+    function f() {
+
+
+        var lengte = document.getElementById("lengte").value;
+        var breedte = document.getElementById("breedte").value;
+
+
+        var opp = lengte * breedte;
+
+        document.getElementById("uitvoer").innerHTML = opp;
+
+    }
+
+</script>
+<input type="text" id="lengte">
+<input type="text" id="breedte">
+<input type="button" value="submit" onclick="f()">
+
+<p id="uitvoer"></p>
+</body>
+</html>

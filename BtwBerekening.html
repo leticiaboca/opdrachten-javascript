@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Opdracht 20</title>
+</head>
+<body>
+<script>
+    ArtCode = prompt("medicijn (1), eten (2) of overige (3)") ;
+        var btwPerc;
+        if (ArtCode == 1) {
+            btwPerc = 0 ;
+        }
+        else if (ArtCode == 2) {
+            btwPerc = 9 ;
+        }
+        else if (ArtCode == 3) {
+            btwPerc = 21 ;
+        }
+        else {
+            ArtCode = 4 ;
+            document.write(" Invoerfout !!") ;
+        }
+    if(ArtCode < 4) {
+        document.write(" Het BTW tarief is " + btwPerc + " procent.") ;
+    }
+
+
+
+
+
+
+</script>
+</body>
+</html>

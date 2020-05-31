@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Totaal prijs</title>
+</head>
+<body>
+<div>
+    <ul>
+        <li>inlezen aantal artikelen</li>
+        <li>inlezen prijs per stuk</li>
+        <li>berekenen totaalprijs</li>
+        <li>afdrukken aantal en prijs per stuk,totaalprijs</li>
+    </ul>
+</div>
+
+<input type="text" id="aantal" value="aantal artikelen">
+<input type="text" id="pps" value="prijs per stuk">
+<button onclick="berekenen()">Berekenen</button>
+
+<p id="aantalVak"> Het aantal is: nog niet ingevoerd</p>
+<p id="ppsvak"> Het aantal is: nog niet ingevoerd</p>
+<p id="totaal"> De totaal prijs is: nog niet berekent</p>
+
+<script>
+    function berekenen() {
+        //input
+        var aantal = document.getElementById("aantal").value;
+        var pps = document.getElementById("pps").value;
+
+        //berekening
+        var totaal = aantal * pps;
+
+        //output
+        document.getElementById("aantalVak").innerHTML = "het aantal is: " +aantal;
+        document.getElementById("ppsvak").innerHTML = "de prijs per stuk is: " +pps;
+        document.getElementById("totaal").innerHTML = "De totaal prijs is: " +totaal;
+
+
+
+
+        
+    }
+
+</script>
+
+</body>
+</html>

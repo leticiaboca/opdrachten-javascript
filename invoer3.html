@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Opdracht9</title>
+</head>
+<body>
+<p><input type="text" id="naam"></p>
+<p><input type="text" id="leeftijd"></p>
+<p><button onclick="f()">OK</button> </p>
+<script>
+    function f() {
+        var naam = document.getElementById("naam").value;
+        var leeftijd = document.getElementById("leeftijd").value;
+
+        document.write("<p>Je naam is " + naam + "</p>");
+        document.write("<p> En je bent" + leeftijd + "jaar oud</p>");
+    }
+</script>
+</body>
+</html>

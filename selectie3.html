@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Opdracht 17</title>
+</head>
+<body>
+<div>
+    <ul>
+        <li>inlezen aantal artikelen</li>
+    </ul>
+</div>
+
+<input type="text" id="aantal artikelen" value="aantal artikelen">
+<p><button onclick="bereken()">OK</button></p>
+<p id="uitvoer">Tik je aantal artikelen in</p>
+
+<script>
+    function bereken() {
+        //invoer
+        var aantalartikelen = document.getElementById("aantal artikelen").value;
+
+        //berekening en uitvoer
+        if (aantalartikelen <100)
+        {
+            document.getElementById("uitvoer").innerHTML =
+                "Je krijgt geen korting.";
+        }
+        else
+        {
+            document.getElementById("uitvoer").innerHTML =
+                "Je krijgt 10% korting.";
+
+        }
+    }
+</script>
+</body>
+</html>

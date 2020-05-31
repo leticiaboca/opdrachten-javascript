@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>artCode
+    <meta charset="UTF-8">
+    <title>Opdracht 18</title>
+</head>
+<body>
+<p><input type="text" id="leeftijd" value="Wat is je leeftijd?"></p>
+<p><button onclick="bereken()">OK</button></p>
+<p id="uitvoer">Tik je leeftijd in...</p>
+
+<script>
+    function bereken() {
+        //invoer
+        var leeftijd = document.getElementById("leeftijd").value;
+
+        //berekening en uitvoer
+        if (leeftijd <13)
+        {
+            document.getElementById("uitvoer").innerHTML =
+                "lagere school";
+        }
+        else if (leeftijd < 17)
+        {
+            document.getElementById("uitvoer").innerHTML =
+                "middelbare school";
+        }
+        else
+        {
+            document.getElementById("uitvoer").innerHTML =
+                "vervolgonderwijs"
+        }
+    }
+</script>
+</body>
+</html>
